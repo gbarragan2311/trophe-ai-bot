@@ -1,8 +1,8 @@
-
 from msgraph import get_token, get_emails, get_events
 from transformers import pipeline
 
-summarizer = pipeline("summarization", model="philschmid/bart-small-cnn-samsum")
+# Modelo accesible y público
+summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
 async def handle_message(text: str) -> str:
     text = text.lower()
