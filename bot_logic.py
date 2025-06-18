@@ -2,7 +2,7 @@
 from msgraph import get_token, get_emails, get_events
 from transformers import pipeline
 
-summarizer = pipeline("summarization")
+summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
 async def handle_message(text: str) -> str:
     text = text.lower()
