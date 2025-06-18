@@ -6,3 +6,4 @@ uvicorn
 msal
 requests
 aiohttp
+botbuilder-core
